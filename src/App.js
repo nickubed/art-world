@@ -5,20 +5,14 @@ import ButtonBar from './ButtonBar'
 
 function App() {
   let [data, setData] = useState({})
-  let [objectId, setObjectId] = useState(12755)
-  const errorImg = 'https://placekitten.com/200/200'
-
-  let [objectImg, setObjectImg] = useState(errorImg)
-
+  let [objectId, setObjectId] = useState(12757)
 
   useEffect(() => {
     document.title='Welcome to ArtWorld'
-    setObjectImg(null)
     fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectId}`)
     .then(response => response.json())
     .then(resdata => {
       setData(resdata)
-      setObjectImg(resdata.primaryImage)
     })
   }, [objectId])
 
@@ -27,13 +21,13 @@ function App() {
   }
 
   const displayImage = () => {
-    if(!objectImg) {
+    if(!data.primaryImage) {
       return (
         <h2>Loading...</h2>
       )
     }
     return (
-      <ArtDisplay objectImg={objectImg} title={data.title} />
+      <ArtDisplay objectImg={data.primaryImage} title={data.title} />
     )
   }
 
