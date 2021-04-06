@@ -5,7 +5,7 @@ import ButtonBar from './ButtonBar'
 
 function App() {
   let [data, setData] = useState({})
-  let [objectId, setObjectId] = useState(12757)
+  let [objectId, setObjectId] = useState(12770)
 
   useEffect(() => {
     document.title='Welcome to ArtWorld'
@@ -17,13 +17,13 @@ function App() {
   }, [objectId])
 
   const handleIterate = (e) => {
-    setObjectId(objectId + Number(e.target.value))
+    setObjectId(objectId + e.target.value)
   }
 
   const displayImage = () => {
     if(!data.primaryImage) {
       return (
-        <h2>Loading...</h2>
+        <h2>No Image!</h2>
       )
     }
     return (
