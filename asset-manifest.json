@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/art-world/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/art-world/static/js/main.09c4801b.chunk.js",
+    "main.js.map": "/art-world/static/js/main.09c4801b.chunk.js.map",
+    "runtime-main.js": "/art-world/static/js/runtime-main.bb235dbf.js",
+    "runtime-main.js.map": "/art-world/static/js/runtime-main.bb235dbf.js.map",
+    "static/js/2.016459b6.chunk.js": "/art-world/static/js/2.016459b6.chunk.js",
+    "static/js/2.016459b6.chunk.js.map": "/art-world/static/js/2.016459b6.chunk.js.map",
+    "static/js/3.bfc161cf.chunk.js": "/art-world/static/js/3.bfc161cf.chunk.js",
+    "static/js/3.bfc161cf.chunk.js.map": "/art-world/static/js/3.bfc161cf.chunk.js.map",
+    "index.html": "/art-world/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/art-world/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.016459b6.chunk.js.LICENSE.txt": "/art-world/static/js/2.016459b6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb235dbf.js",
+    "static/js/2.016459b6.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.09c4801b.chunk.js"
+  ]
+}
