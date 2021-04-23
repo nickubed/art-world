@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css';
-import ArtDisplay from './ArtDisplay'
+import Gallery from './Gallery'
 import ButtonBar from './ButtonBar'
 
 function App() {
@@ -11,13 +11,11 @@ function App() {
     document.title='Welcome to ArtWorld'
     fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${objectId}`)
     .then(response => response.json())
-    .then(resdata => {
-      setData(resdata)
-    })
+    .then(resdata => setData(resdata))
   }, [objectId])
 
   const handleIterate = (e) => {
-    setObjectId(objectId + e.target.value)
+    setObjectId(objectId + Number(e.target.value))
   }
 
   const displayImage = () => {
@@ -27,7 +25,7 @@ function App() {
       )
     }
     return (
-      <ArtDisplay objectImg={data.primaryImage} title={data.title} />
+      <Gallery objectImg={data.primaryImage} title={data.title} />
     )
   }
 
